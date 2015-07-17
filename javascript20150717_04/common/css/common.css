@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/*=====================================================================
+	base
+=====================================================================*/
+html{
+	font-size:62.5%;/*10px*/
+}
+
+body{
+	width:100%;
+	font-size:1.2em;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align:center;
+}
+
+
+.inner{width:800px; margin:0 auto; overflow:hidden;}
+
+a{text-decoration:none;}
+
+/*=====================================================================
+	warpper
+=====================================================================*/
+#wrapper{
+}
+
+/*=====================================================================
+	header
+=====================================================================*/
+header{
+	background:#000000;
+	color:#fff;
+	padding:10px 0;
+}
+
+/*=====================================================================
+	nav
+=====================================================================*/
+nav{
+	margin-bottom:20px;
+}
+
+nav{
+	overflow:hidden;
+	background:#CCC;
+}
+
+nav li{
+	overflow:hidden;
+	width:25%;
+	float:left;
+	background:#CCC;
+}
+
+nav li a{
+	font-size:1.2em;
+	display:block;
+	padding:14px;
+}
+
+.on{
+	color:#FFFFFF;
+	background:#000;
+}
+
+/*=====================================================================
+	content
+=====================================================================*/
+#content{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+#content #ajaxArea{
+	position:relative;
+	width:800px;
+	height:800px;
+	padding:50px;
+	border:solid 1px #999999;
+	box-sizing:border-box;
+}
+
+#loading{
+	position:absolute;
+	left:50%;
+	margin-left:-40px;
+	top:50%;
+	margin-top:-40px;
+	width:80px;
+	height:80px;
+}
+
+/*=====================================================================
+	footer
+=====================================================================*/
+
+footer{
+	border-top:solid 1px #666;
+	background:#000000;
+	display:block;
+}
+
+footer small{
+	color:#FFF;
+	display:block;
+	font-size:0.8em;
+	padding:15px 0;
+}
+
+
+
+/*=====================================================================
+	sabContent
+=====================================================================*/
+
+#sabContent{
+	width:700px;
+	height:700px;
+	margin:0 auto;
+}
+
+.sab_r{background:#F00}
+.sab_b{background:#00F}
+.sab_g{background:#360}
+.sab_p{background:#F69}
+
+
+
+
+
+
+
+
