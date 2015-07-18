@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+/*=====================================================================
+	base
+=====================================================================*/
+html{
+	font-size:62.5%;/*10px*/
+}
+
+body{
+	width:100%;
+	font-size:1.2em;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align:center;
+}
+
+p{
+	line-height:1.5;
+}
+
+.inner{
+	width:990px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.mb_00{
+	margin-bottom:0!important;
+}
+
+/*=====================================================================
+	warpper
+=====================================================================*/
+#wrapper{
+}
+
+/*=====================================================================
+	header
+=====================================================================*/
+header{
+	background:#000000;
+	color:#fff;
+	padding:10px 0;
+	margin-bottom:50px;
+}
+
+/*=====================================================================
+	content
+=====================================================================*/
+#content{
+	padding:0 10px;
+	width:990px;
+	overflow:hidden;
+	margin:0 auto 50px;
+}
+
+/*---------------------
+	right
+---------------------*/
+#content #right{
+	float:right;
+	width:720px;
+}
+
+#right section{
+	margin-bottom:30px;
+}
+
+#content #right  section h1{
+	margin-bottom:10px;
+	font-size:2em;
+	background:#333333;
+	color:#FFF;
+	padding:10px 0;
+}
+
+.dataWap{
+	margin-left:-12px;
+}
+
+/*dataList_A*/
+.dataList_A{
+	position:relative;
+	width:200px;
+	padding:20px 15px;
+	float:left;
+	margin-left:12px;
+	border:solid 1px #CCC;
+}
+
+.dataList_A h2{
+	font-size:1.2em;
+	margin-bottom:10px;
+	background:#333;
+	padding:10px 0;
+	color:#fff;
+}
+
+.dataList_A .photo{
+	position:relative;
+	margin-bottom:10px;
+	width:200px;
+	height:200px;
+}
+
+.dataList_A .photo a img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-100px;
+	margin-left:-100px;
+	z-index:1;
+	border:solid 5px #666;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+.dataList_A p.sabTitle{
+	color:#FFFFFF;
+	margin-bottom:10px;
+	letter-spacing:0.1em;
+	font-size:1em;
+	padding:4px;
+	border-radius:5px;
+	border:solid 1px #FFCC00;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+	background:#004097;
+}
+
+.dataList_A p.text{
+	text-align:left;
+	margin-bottom:15px;
+	padding:8px;
+	background:#fff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+}
+
+.dataList_A ul{
+	overflow:hidden;
+	margin-bottom:10px;
+}
+
+.dataList_A li{
+	text-align:center;
+	float:left;
+	height:74px;
+	width:100px;
+}
+
+/*dataList_B*/
+.dataList_B{
+	position:relative;
+	width:149px;
+	padding:18px 10px;
+	float:left;
+	margin-left:12px;
+	border:solid 1px #CCC;
+}
+
+.dataList_B h2{
+	font-size:1.2em;
+	margin-bottom:10px;
+	padding:10px 0;
+	background:#333;
+	color:#fff;
+}
+
+.dataList_B .photo{
+	position:relative;
+	margin-bottom:10px;
+	width:149px;
+	height:149px;
+}
+
+.dataList_B .photo a img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-75px;
+	margin-left:-75px;
+	z-index:1;
+	border:solid 5px #666;
+	-webkit-border:solid 2px #004097;
+	-moz-border:solid 2px #004097;
+	box-sizing:border-box;
+}
+
+.dataList_B p.sabTitle{
+	font-size:1.2em;
+	color:#FFFFFF;
+	margin-bottom:10px;
+	letter-spacing:0.1em;
+	font-size:1em;
+	padding:4px;
+	background:#004097;
+}
+
+.dataList_B p.text{
+	text-align:left;
+	margin-bottom:15px;
+	padding:8px;
+	background:#fff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+}
+
+.dataList_B ul{
+	overflow:hidden;
+	margin-bottom:10px;
+}
+
+.dataList_B li{
+	text-align:center;
+	float:left;
+	width:74px;
+	height:50px;
+}
+
+/*---------------------
+	left
+---------------------*/
+#content #left{
+	float:left;
+	width:240px;
+}
+
+aside h1{
+	border:solid 1px #999;
+	letter-spacing:0.1em;
+	color:#FFFFFF;
+	padding:15px 0;
+	background:#666666;
+	margin-bottom:10px;
+	font-size:1.2em;
+	background:#333333;
+	color:#fff;
+}
+
+/*bannerList*/
+.bannerList li+li{
+	margin-top:10px;
+}
+
+.bannerList a:hover{
+	opacity:0.8;
+}
+
+/*=====================================================================
+	footer
+=====================================================================*/
+
+footer{
+	border-top:solid 1px #666;
+	background:#000000;
+	display:block;
+}
+
+footer small{
+	color:#FFF;
+	display:block;
+	font-size:0.8em;
+	padding:15px 0;
+}
