@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>promiseアニメーションテスト</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="common/js/common.js" charset="uft-8"></script>
+<style>
+	#box{
+		width:100px;
+		height:100px;
+		background:#999999;
+		position:absolute;
+		left:10px;
+		top:10px;
+	}
+	
+	.move01{
+		-webkit-animation:move01 3s;
+		-webkit-animation-iteration-count:1; 
+	}
+	
+	@-webkit-keyframes move01 { 
+	  0%{-webkit-transform:translate(0px,0px);} 
+	  50%{-webkit-transform:translate(500px,0px);}
+	  100%{-webkit-transform:translate(0px,0px);} 
+	}
+	
+	
+	.move02{
+		-webkit-animation:move02 3s;
+		-webkit-animation-iteration-count:1; 
+	}
+	
+	@-webkit-keyframes move02 { 
+	  0%{-webkit-transform:translate(0px,0px);} 
+	  50%{-webkit-transform:translate(500px,500px);}
+	  100%{-webkit-transform:translate(0px,0px);} 
+	}
+	
+	button{
+		position:absolute;
+		bottom:50px;
+		left:50%;
+	}
+</style>
+</head>
+
+<body>
+
+	<div id="box"></div>
+    <button>ボタン</button>
+
+
+</html>
