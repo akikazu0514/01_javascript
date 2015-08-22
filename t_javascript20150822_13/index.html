@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PORTFOLIO</title>
+
+<link rel="stylesheet" type="text/css" href="common/css/reset.css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<style>
+	.box{
+		position:absolute;
+		width:100px;
+		height:100px;
+		left:0;
+		top:0;
+		background:#333333;
+		transition:all 0.4s ease-in-out;
+		-webkit-transition:all 0.4s ease-in-out;
+		-moz-transition:all 0.4s ease-in-out;
+		-ms-transition:all 0.4s ease-in-out;
+		-o-transition:all 0.4s ease-in-out;
+	}
+	
+	.move{
+		animation:hogeName 1s;
+		-webkit-animation:hogeName 1s;
+		-moz-animation:hogeName 1s;
+		-ms-animation:hogeName 1s;
+		-o-animation:hogeName 1s;
+	}
+	
+	@-webkit-keyframes hogeName{
+		0% {transform:translateX(0px)}
+		50% {transform:translateX(1000px)}
+		100% {transform:translateX(0px)}
+	}
+	
+	@-moz-keyframes hogeName{
+		0% {transform:translateX(0px)}
+		50% {transform:translateX(1000px)}
+		100% {transform:translateX(0px)}
+	}
+	
+	@-ms-keyframes hogeName{
+		0% {transform:translateX(0px)}
+		50% {transform:translateX(1000px)}
+		100% {transform:translateX(0px)}
+	}
+	
+	@-o-keyframes hogeName{
+		0% {transform:translateX(0px)}
+		50% {transform:translateX(1000px)}
+		100% {transform:translateX(0px)}
+	}
+
+	@keyframes hogeName{
+		0% {transform:translateX(0px)}
+		50% {transform:translateX(1000px)}
+		100% {transform:translateX(0px)}
+	}
+	
+	button{
+		position:absolute;
+		z-index:1
+	}
+	
+</style>
+<script>
+$(function(){
+	//animationend webkitAnimationEnd oAnimationEnd
+	var
+	$box = $('.box'),
+	aniEvent = 'webkitAnimationEnd mozAnimationEnd msAnimationEnd oAnimationEnd animationEnd';
+	
+	$('button').on('click',function(){
+		$box.addClass('move');
+		
+		$box.bind(aniEvent,function(){
+			$box.removeClass('move');
+			//console.log('test');
+		});
+		
+		
+	});
+	
+	
+});
+</script>
+
+
+</head>
+<body>
+	
+   <div class="box"></div>
+	
+    
+    <button>aaaa</button>
+</body>
+</html>
